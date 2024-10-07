@@ -1,0 +1,15 @@
+# Função para calcular o valor de venda com lucro
+def calcular_valor_venda(valor_receita):
+    # Calcular o valor do lucro (3% do valor de receita)
+    valor_lucro = valor_receita * 0.03
+    
+    # Calcular o valor de venda (valor de receita + valor do lucro)
+    valor_venda = valor_receita + valor_lucro
+    
+    return valor_venda
+
+# Exemplo de uso
+valor_receita = float(input("Digite o valor de receita: "))
+valor_venda = calcular_valor_venda(valor_receita)
+
+print(f"O valor de venda é: R$ {valor_venda:.2f}")
